@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/fortuneapp/static/css/main.370b7f7d.css",
-    "main.js": "/fortuneapp/static/js/main.05b07387.js",
+    "main.js": "/fortuneapp/static/js/main.3bc79eeb.js",
     "static/js/377.16ad73ec.chunk.js": "/fortuneapp/static/js/377.16ad73ec.chunk.js",
     "service-worker.js": "/fortuneapp/service-worker.js",
     "static/media/logo.svg": "/fortuneapp/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
     "index.html": "/fortuneapp/index.html",
     "main.370b7f7d.css.map": "/fortuneapp/static/css/main.370b7f7d.css.map",
-    "main.05b07387.js.map": "/fortuneapp/static/js/main.05b07387.js.map",
+    "main.3bc79eeb.js.map": "/fortuneapp/static/js/main.3bc79eeb.js.map",
     "377.16ad73ec.chunk.js.map": "/fortuneapp/static/js/377.16ad73ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.370b7f7d.css",
-    "static/js/main.05b07387.js"
+    "static/js/main.3bc79eeb.js"
   ]
 }
