@@ -31,11 +31,14 @@ export default class PaperObj {
  
         let me = this;
 
-        console.log('!!you clicked on this.paperMesh', me.paperMesh);
+        console.log('!!you clicked on this.paperMesh', this, me, me.paperMesh, me.onSelectObjRequested);
 
         console.log('TEST TEST...10...document == ', document);
 
-        me.debugContext.selectedObj = me.paperMesh;
+        if (me.debugContext != undefined) {
+            me.debugContext.selectedObj = me.paperMesh;
+        }
+         
         me.onSelectObjRequested(me.paperMesh);
 
 
@@ -67,6 +70,7 @@ export default class PaperObj {
         ///console.log("paperObj::textureLoader==", textureLoader);
         ///console.log("paperObj::debugContext==", debugContext);
         ///console.log("paperObj::domEvents==", domEvents);
+        console.log("paperObj::onSelectObjRequested==", onSelectObjRequested);
 
         let me = this;
 
@@ -98,7 +102,7 @@ export default class PaperObj {
         
             
 
-          me.domEvents.addEventListener(me.paperMesh, 'click', me.actionHandler, false);
+          me.domEvents.addEventListener(me.paperMesh, 'click', me.actionHandler.bind(this), false);
            
           /*
           console.log('TEST TEST...0...', document.getElementById(me.paperMesh.id));
