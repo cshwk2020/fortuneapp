@@ -1,0 +1,59 @@
+
+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
+
+cd /Users/cshwk1995/ANGULAR/cropimageapp
+
+(1)
+heroku local web
+
+(2)
+sudo git rm -r --cached .
+sudo git add -A
+sudo git commit -am 'fix'
+sudo git push heroku master
+
+
+heroku git:remote -a ngdrawapp
+
+
+heroku ps:scale web=1
+heroku open
+https://lit-taiga-67797.herokuapp.com
+
+(3)
+git push heroku HEAD:main
+https://cropimageapp.herokuapp.com
+
+
+----------
+git init
+git config --global user.email "cshwk2020@gmail.com"
+git config --global user.name "HUNG WAI KAY"
+git commit -m "initial commit"
+heroku create
+
+git push heroku master
+git pull heroku master
+git push heroku master
+
+heroku ps:scale web=1
+heroku open
+
+https://dashboard.heroku.com/apps/cropimageapp
+https://cropimageapp.herokuapp.com
+
+heroku ps:exec -a cropimageapp
+exit
+----
+heroku ps:forward 9229 -a cropimageapp
+
+
+
+// https --> 304 [ --verbose ]
+npm config set registry="http://registry.npmjs.org"
+sudo npm install jimp --SAVE --verbose
+
+
+
+
+

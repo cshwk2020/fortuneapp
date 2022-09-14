@@ -1,0 +1,16 @@
+
+:root {
+    --report-thumbnail-cols: 3;
+    --report-thumbnail-width: 400px;
+  }
+
+.report-thumbnail-container {
+    display: grid;
+    grid-template-columns: repeat(var(--report-thumbnail-cols), 1fr);
+}
+
+.report-thumbnail {
+    border: 1px solid #CCC;
+    width: 95%;
+    height: auto; 
+}
